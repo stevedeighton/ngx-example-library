@@ -182,9 +182,15 @@ UIToastComponent.ctorParameters = () => [
  * @fileoverview added by tsickle
  * @suppress {checkTypes} checked by tsc
  */
-class UIToastModule {
+class UICoreModule {
+    /**
+     * @return {?}
+     */
+    static forRoot() {
+        return { ngModule: UICoreModule, providers: [ToastService$1] };
+    }
 }
-UIToastModule.decorators = [
+UICoreModule.decorators = [
     { type: NgModule, args: [{
                 declarations: [
                     UIToastComponent,
@@ -199,7 +205,7 @@ UIToastModule.decorators = [
             },] },
 ];
 /** @nocollapse */
-UIToastModule.ctorParameters = () => [];
+UICoreModule.ctorParameters = () => [];
 
 /**
  * @fileoverview added by tsickle
@@ -219,4 +225,4 @@ UIToastModule.ctorParameters = () => [];
  * Generated bundle index. Do not edit.
  */
 
-export { ToastService$1 as ToastService, Toast, UIToastModule, UIToastComponent as ɵa };
+export { ToastService$1 as ToastService, Toast, UICoreModule, UIToastComponent as ɵa };

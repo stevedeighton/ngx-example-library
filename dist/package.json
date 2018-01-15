@@ -1,6 +1,6 @@
 {
 	"name": "ngx-example-library",
-	"version": "0.1.12",
+	"version": "0.0.1",
 	"description": "An example library",
 	"main": "./bundles/ngx-example-library.umd.js",
 	"module": "./esm5/ngx-example-library.js",

@@ -204,10 +204,19 @@ var UIToastComponent = (function () {
  * @fileoverview added by tsickle
  * @suppress {checkTypes} checked by tsc
  */
-var UIToastModule = (function () {
-    function UIToastModule() {
+var UICoreModule = (function () {
+    function UICoreModule() {
     }
-    UIToastModule.decorators = [
+    /**
+     * @return {?}
+     */
+    UICoreModule.forRoot = /**
+     * @return {?}
+     */
+    function () {
+        return { ngModule: UICoreModule, providers: [ToastService$1] };
+    };
+    UICoreModule.decorators = [
         { type: core.NgModule, args: [{
                     declarations: [
                         UIToastComponent,
@@ -222,8 +231,8 @@ var UIToastModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    UIToastModule.ctorParameters = function () { return []; };
-    return UIToastModule;
+    UICoreModule.ctorParameters = function () { return []; };
+    return UICoreModule;
 }());
 
 /**
@@ -246,7 +255,7 @@ var UIToastModule = (function () {
 
 exports.ToastService = ToastService$1;
 exports.Toast = Toast;
-exports.UIToastModule = UIToastModule;
+exports.UICoreModule = UICoreModule;
 exports.ɵa = UIToastComponent;
 
 Object.defineProperty(exports, '__esModule', { value: true });
