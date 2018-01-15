@@ -1,0 +1,11 @@
+<ul [class.has-toasts]="toasts.length > 0">
+    <li *ngFor="let t of toasts"
+        [class.show]="t.show"
+        [class.error]="t.type === 'error'"
+        [class.warning]="t.type === 'warning'"
+        [class.success]="t.type === 'success'">
+        <p>{{ t.message }}</p>
+        <i class="icon-cross icon-button" (click)="onRemove(t)"></i>
+    </li>
+</ul>
+

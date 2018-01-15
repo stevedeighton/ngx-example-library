@@ -1,0 +1,50 @@
+{
+	"name": "ngx-example-library",
+	"version": "0.1.12",
+	"description": "An example library",
+	"main": "./bundles/ngx-example-library.umd.js",
+	"module": "./esm5/ngx-example-library.js",
+	"es2015": "./esm2015/ngx-example-library.js",
+	"typings": "./ngx-example-library.d.ts",
+	"scripts": {
+		"publish:dist": "cd dist && npm publish && cd .."
+	},
+	"author": "Steve Deighton",
+	"license": "MIT",
+	"peerDependencies": {
+		"@angular/core": "^5.0.0",
+		"@angular/common": "^5.0.0",
+		"@angular/platform-browser": "^5.0.0",
+		"@angular/router": "^5.0.0",
+		"rxjs": "^5.5.2"
+	},
+	"devDependencies": {
+		"@angular/common": "^5.0.2",
+		"@angular/compiler": "^5.0.2",
+		"@angular/compiler-cli": "^5.0.2",
+		"@angular/core": "^5.0.2",
+		"@angular/platform-browser": "^5.0.2",
+		"@angular/router": "^5.0.2",
+		"@types/node": "^9.3.0",
+		"bowser": "^1.9.1",
+		"codelyzer": "^4.0.2",
+		"gulp": "^3.9.1",
+		"gulp-inline-ng2-template": "^4.0.0",
+		"gulp-less": "^3.4.0",
+		"gulp-notify": "^3.2.0",
+		"gulp-plumber": "^1.2.0",
+		"gulp-rename": "^1.2.2",
+		"gulp-util": "^3.0.8",
+		"less-plugin-autoprefix": "^1.5.1",
+		"less-plugin-clean-css": "^1.5.1",
+		"ng2-page-scroll": "^4.0.0-beta.12",
+		"rollup": "^0.51.8",
+		"rxjs": "^5.5.2",
+		"stylelint": "^8.4.0",
+		"tslint": "^5.8.0",
+		"typescript": "2.4.2",
+		"uglify-js": "^3.0.7",
+		"vinyl-fs": "^2.4.4",
+		"zone.js": "^0.8.14"
+	}
+}
